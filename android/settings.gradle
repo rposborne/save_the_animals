@@ -1,0 +1,3 @@
+rootProject.name = 'save_the_animals'
+
+include ':app'
