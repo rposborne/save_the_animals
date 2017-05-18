@@ -5,6 +5,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 
 import Login from "../Login";
+import Logout from "../Logout";
 import Observation from "../Observation";
 import store from "../../store";
 
@@ -15,15 +16,28 @@ export default class App extends Component {
       <NativeRouter>
         <Provider store={store}>
           <View style={styles.container}>
-            <View style={styles.nav}>
-              <Link
-                to="/observations/new"
-                underlayColor="#f0f4f7"
-                style={styles.navItem}
-              >
-                <Text>Observe</Text>
-              </Link>
-            </View>
+
+
+              <View style={styles.nav}>
+                <Link
+                  to="/observations/new"
+                  underlayColor="#f0f4f7"
+                  style={styles.navItem}
+                >
+                  <Text>Observe</Text>
+                </Link>
+
+                <Link
+                  to="/logout"
+                  underlayColor="#f0f4f7"
+                  style={styles.navItem}
+                >
+                  <Text>Logout</Text>
+                </Link>
+                 </View>
+
+
+
 
             <Route
               exact

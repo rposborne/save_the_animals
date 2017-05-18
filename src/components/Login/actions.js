@@ -1,4 +1,5 @@
 export const LOGIN_REQUEST = 'LOGIN_REQUEST'
+export const LOGOUT_REQUEST = 'LOGOUT_REQUEST'
 export const SENDING_REQUEST = 'SENDING_REQUEST'
 export const APPLY_JWT = 'APPLY_JWT'
 export const SET_AUTH = 'SET_AUTH'
